@@ -15,7 +15,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0;  
-border: 1px grey;  
+border: 0;  
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
@@ -23,6 +23,45 @@ vertical-align: baseline;
 
 /* Add CSS styling here */
 
+/*General*/
 body{
-    background-color:silver;
+    background-color:lightseagreen;
+}
+
+/*Top of page*/
+header{
+    text-align:center;
+}
+
+header h1{
+    font-size:50px;
+    padding:20px;
+}
+
+header nav{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+header nav a{
+    box-sizing:border-box;
+    padding:10px;
+    margin:0;
+    max-width:100%;
+    border:1px;
+    border-width:5px 15px 5px 15px;
+    background-color:greenyellow;
+}
+
+/*Introduction Paragraph*/
+
+.siteIntro, .introHead{
+    padding:20px;
+    font-size:30px;
+    text-align:center;
+}
+
+.siteIntro p{
+    font-size:15px;
 }
