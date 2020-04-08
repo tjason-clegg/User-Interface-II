@@ -26,6 +26,12 @@ vertical-align: baseline;
 /*General*/
 body{
     background-color:lightseagreen;
+    border:25px solid indigo;
+}
+
+.pgBrdr{
+    width:95%;
+    margin:0 auto;
 }
 
 /*Top of page*/
@@ -34,7 +40,7 @@ header{
 }
 
 header h1{
-    font-size:50px;
+    font-size:70px;
     padding:20px;
 }
 
@@ -64,12 +70,12 @@ header nav a:hover{
 
 .siteIntro, .introHead{
     padding:20px;
-    font-size:30px;
+    font-size:50px;
     text-align:center;
 }
 
 .siteIntro p{
-    font-size:15px;
+    font-size:20px;
     padding:15px;
 }
 
@@ -77,19 +83,67 @@ header nav a:hover{
 /*Gallery Section*/
 
 .centerImg{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
 
+.centerImg img{
+    width:100%;
+    padding:20px;
+    height:50vh;
 }
 
 .projectGallery{
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction:row;
+}
 
+.projectGallery img{
+    width:20%;
+    height:50vh;
+    padding:10px;
 }
 
 .galleryDesc{
-
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
 }
 
 /*Footer Content*/
 
-.contact{
+footer{
+    text-align:center;
+    box-sizing:border-box;
+    padding:40px;
+    margin:0;
+    max-width:100%;
+    border-color:lightseagreen;
+    border-width:5px 30px 5px 30px;
+    background-color:greenyellow;
+    font:black
+}
 
+footer nav{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+footer nav a{
+    box-sizing:border-box;
+    padding:10px;
+    margin:0;
+    max-width:100%;
+    border:1px;
+    border-width:5px 30px 5px 30px;
+    background-color:greenyellow;
+    font:black
+}
+
+footer nav a:hover{
+    background-color:black;
+    color:greenyellow;
 }
