@@ -50,11 +50,17 @@ header nav a{
     margin:0;
     max-width:100%;
     border:1px;
-    border-width:5px 15px 5px 15px;
+    border-width:5px 30px 5px 30px;
     background-color:greenyellow;
+    font:black;
 }
 
-/*Introduction Paragraph*/
+header nav a:hover{
+    background-color:black;
+    color:greenyellow;
+}
+
+/*Introduction Section*/
 
 .siteIntro, .introHead{
     padding:20px;
@@ -64,4 +70,26 @@ header nav a{
 
 .siteIntro p{
     font-size:15px;
+    padding:15px;
+}
+
+
+/*Gallery Section*/
+
+.centerImg{
+
+}
+
+.projectGallery{
+
+}
+
+.galleryDesc{
+
+}
+
+/*Footer Content*/
+
+.contact{
+
 }
