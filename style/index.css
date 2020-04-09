@@ -26,7 +26,7 @@ vertical-align: baseline;
 /*General*/
 body{
     background-color:lightseagreen;
-    border:25px solid indigo;
+    border:1.5rem solid indigo;
 }
 
 .pgBrdr{
@@ -40,8 +40,8 @@ header{
 }
 
 header h1{
-    font-size:70px;
-    padding:20px;
+    font-size:5rem;
+    padding:2rem;
 }
 
 header nav{
@@ -55,8 +55,8 @@ header nav a{
     padding:10px;
     margin:0;
     max-width:100%;
-    border:1px;
-    border-width:5px 30px 5px 30px;
+    border:.1rem;
+    border-width:.5rem 3rem;
     background-color:greenyellow;
     font:black;
 }
@@ -69,14 +69,14 @@ header nav a:hover{
 /*Introduction Section*/
 
 .siteIntro, .introHead{
-    padding:20px;
-    font-size:50px;
+    padding:2rem;
+    font-size:3rem;
     text-align:center;
 }
 
 .siteIntro p{
-    font-size:20px;
-    padding:15px;
+    font-size:1.5rem;
+    padding:1.5rem;
 }
 
 
@@ -90,7 +90,7 @@ header nav a:hover{
 
 .centerImg img{
     width:100%;
-    padding:20px;
+    padding:2rem;
     height:50vh;
 }
 
@@ -103,7 +103,7 @@ header nav a:hover{
 .projectGallery img{
     width:20%;
     height:50vh;
-    padding:10px;
+    padding:1rem;
 }
 
 .galleryDesc{
@@ -117,11 +117,11 @@ header nav a:hover{
 footer{
     text-align:center;
     box-sizing:border-box;
-    padding:40px;
+    padding:4rem;
     margin:0;
     max-width:100%;
     border-color:lightseagreen;
-    border-width:5px 30px 5px 30px;
+    border-width:.5rem 3rem;
     background-color:greenyellow;
     font:black
 }
@@ -134,11 +134,11 @@ footer nav{
 
 footer nav a{
     box-sizing:border-box;
-    padding:10px;
+    padding:.5rem;
     margin:0;
     max-width:100%;
-    border:1px;
-    border-width:5px 30px 5px 30px;
+    border:.1rem;
+    border-width:.5rem 3rem;
     background-color:greenyellow;
     font:black
 }
