@@ -25,18 +25,14 @@ vertical-align: baseline;
 
 /*General*/
 body{
-    background-color:lightseagreen;
-    border:1.5rem solid indigo;
-}
-
-.pgBrdr{
-    width:95%;
-    margin:0 auto;
+    background-color:lightgreen;
 }
 
 /*Top of page*/
 header{
     text-align:center;
+    box-sizing:border-box;
+    background-color:lightseagreen;
 }
 
 header h1{
@@ -52,18 +48,18 @@ header nav{
 
 header nav a{
     box-sizing:border-box;
-    padding:10px;
-    margin:0;
+    padding:.8rem;
+    margin:2rem;
     max-width:100%;
     border:.1rem;
     border-width:.5rem 3rem;
-    background-color:greenyellow;
+    background-color:springgreen;
     font:black;
 }
 
 header nav a:hover{
     background-color:black;
-    color:greenyellow;
+    color:springgreen;
 }
 
 /*Introduction Section*/
@@ -124,7 +120,7 @@ footer{
     max-width:100%;
     border-color:lightseagreen;
     border-width:.5rem 3rem;
-    background-color:greenyellow;
+    background-color:lightseagreen;
     font:black
 }
 
@@ -136,22 +132,90 @@ footer nav{
 
 footer nav a{
     box-sizing:border-box;
-    padding:.5rem;
-    margin:0;
+    padding:2rem;
+    margin:2rem;
     max-width:100%;
     border:.1rem;
     border-width:.5rem 3rem;
-    background-color:greenyellow;
+    background-color:springgreen;
     font:black
 }
 
 footer nav a:hover{
     background-color:black;
-    color:greenyellow;
+    color:springgreen;
 }
 
-/*Accessabiliy*/
+/*Accessibility*/
 
 @media(max-width:800px){
+    .projectGallery{
+        flex-wrap:wrap;
+        flex-direction:row;
+        justify-content:center;
+    
+    }
 
+    .projectGallery img{
+        width:8rem;
+        height:20vh;
+        padding:1rem;
+    }
+    
+    .galleryDesc{
+        font-size:1.2rem;
+        order:5;
+        text-align:center;
+        padding:.7rem;
+    }
+
+    footer nav a{
+        box-sizing:border-box;
+        padding:1.5rem;
+        margin:2rem;
+        max-width:100%;
+        border:.1rem;
+        border-width:.5rem 3rem;
+        background-color:springgreen;
+        font:black
+    }
+    
+}
+
+@media(max-width:500px){
+    footer{
+        display:flex;
+        justify-content:space-between;
+        text-align:center;
+        box-sizing:border-box;
+        padding:.1rem;
+        margin:0;
+        max-width:100%;
+        border-color:lightseagreen;
+        border-width:.5rem 3rem;
+        background-color:lightseagreen;
+        font:black
+    }
+
+    header nav a{
+        box-sizing:border-box;
+        padding:.1rem;
+        margin:.8rem;
+        max-width:100%;
+        border:.1rem;
+        border-width:.5rem 3rem;
+        background-color:springgreen;
+        font:black;
+    }
+
+    footer nav a{
+        box-sizing:border-box;
+        padding:.8rem;
+        margin:.2rem;
+        max-width:100%;
+        border:.1rem;
+        border-width:.5rem 3rem;
+        background-color:springgreen;
+        font:black
+    }
 }
