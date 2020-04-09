@@ -75,7 +75,7 @@ header nav a:hover{
 }
 
 .siteIntro p{
-    font-size:1.5rem;
+    font-size:1.3rem;
     padding:1.5rem;
 }
 
@@ -110,6 +110,8 @@ header nav a:hover{
     display:flex;
     justify-content:center;
     flex-direction:column;
+    text-align:center;
+    font-size:1.2rem;
 }
 
 /*Footer Content*/
@@ -146,4 +148,10 @@ footer nav a{
 footer nav a:hover{
     background-color:black;
     color:greenyellow;
+}
+
+/*Accessabiliy*/
+
+@media(max-width:800px){
+
 }
