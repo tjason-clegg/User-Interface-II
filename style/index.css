@@ -1,1 +1,149 @@
+/*Reset code here*/
+
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+
 /* Add CSS styling here */
+
+/*General*/
+body{
+    background-color:lightseagreen;
+    border:25px solid indigo;
+}
+
+.pgBrdr{
+    width:95%;
+    margin:0 auto;
+}
+
+/*Top of page*/
+header{
+    text-align:center;
+}
+
+header h1{
+    font-size:70px;
+    padding:20px;
+}
+
+header nav{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+header nav a{
+    box-sizing:border-box;
+    padding:10px;
+    margin:0;
+    max-width:100%;
+    border:1px;
+    border-width:5px 30px 5px 30px;
+    background-color:greenyellow;
+    font:black;
+}
+
+header nav a:hover{
+    background-color:black;
+    color:greenyellow;
+}
+
+/*Introduction Section*/
+
+.siteIntro, .introHead{
+    padding:20px;
+    font-size:50px;
+    text-align:center;
+}
+
+.siteIntro p{
+    font-size:20px;
+    padding:15px;
+}
+
+
+/*Gallery Section*/
+
+.centerImg{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.centerImg img{
+    width:100%;
+    padding:20px;
+    height:50vh;
+}
+
+.projectGallery{
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction:row;
+}
+
+.projectGallery img{
+    width:20%;
+    height:50vh;
+    padding:10px;
+}
+
+.galleryDesc{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+
+/*Footer Content*/
+
+footer{
+    text-align:center;
+    box-sizing:border-box;
+    padding:40px;
+    margin:0;
+    max-width:100%;
+    border-color:lightseagreen;
+    border-width:5px 30px 5px 30px;
+    background-color:greenyellow;
+    font:black
+}
+
+footer nav{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+footer nav a{
+    box-sizing:border-box;
+    padding:10px;
+    margin:0;
+    max-width:100%;
+    border:1px;
+    border-width:5px 30px 5px 30px;
+    background-color:greenyellow;
+    font:black
+}
+
+footer nav a:hover{
+    background-color:black;
+    color:greenyellow;
+}
