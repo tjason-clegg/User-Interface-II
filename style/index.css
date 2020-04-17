@@ -25,23 +25,19 @@ vertical-align: baseline;
 
 /*General*/
 body{
-    background-color:lightseagreen;
-    border:25px solid indigo;
-}
-
-.pgBrdr{
-    width:95%;
-    margin:0 auto;
+    background-color:lightgreen;
 }
 
 /*Top of page*/
 header{
     text-align:center;
+    box-sizing:border-box;
+    background-color:lightseagreen;
 }
 
 header h1{
-    font-size:70px;
-    padding:20px;
+    font-size:5rem;
+    padding:2rem;
 }
 
 header nav{
@@ -52,31 +48,31 @@ header nav{
 
 header nav a{
     box-sizing:border-box;
-    padding:10px;
-    margin:0;
+    padding:.8rem;
+    margin:2rem;
     max-width:100%;
-    border:1px;
-    border-width:5px 30px 5px 30px;
-    background-color:greenyellow;
+    border:.1rem;
+    border-width:.5rem 3rem;
+    background-color:springgreen;
     font:black;
 }
 
 header nav a:hover{
     background-color:black;
-    color:greenyellow;
+    color:springgreen;
 }
 
 /*Introduction Section*/
 
 .siteIntro, .introHead{
-    padding:20px;
-    font-size:50px;
+    padding:2rem;
+    font-size:3rem;
     text-align:center;
 }
 
 .siteIntro p{
-    font-size:20px;
-    padding:15px;
+    font-size:1.3rem;
+    padding:1.5rem;
 }
 
 
@@ -90,7 +86,7 @@ header nav a:hover{
 
 .centerImg img{
     width:100%;
-    padding:20px;
+    padding:2rem;
     height:50vh;
 }
 
@@ -103,13 +99,15 @@ header nav a:hover{
 .projectGallery img{
     width:20%;
     height:50vh;
-    padding:10px;
+    padding:1rem;
 }
 
 .galleryDesc{
     display:flex;
     justify-content:center;
     flex-direction:column;
+    text-align:center;
+    font-size:1.2rem;
 }
 
 /*Footer Content*/
@@ -117,12 +115,12 @@ header nav a:hover{
 footer{
     text-align:center;
     box-sizing:border-box;
-    padding:40px;
+    padding:4rem;
     margin:0;
     max-width:100%;
     border-color:lightseagreen;
-    border-width:5px 30px 5px 30px;
-    background-color:greenyellow;
+    border-width:.5rem 3rem;
+    background-color:lightseagreen;
     font:black
 }
 
@@ -134,16 +132,90 @@ footer nav{
 
 footer nav a{
     box-sizing:border-box;
-    padding:10px;
-    margin:0;
+    padding:2rem;
+    margin:2rem;
     max-width:100%;
-    border:1px;
-    border-width:5px 30px 5px 30px;
-    background-color:greenyellow;
+    border:.1rem;
+    border-width:.5rem 3rem;
+    background-color:springgreen;
     font:black
 }
 
 footer nav a:hover{
     background-color:black;
-    color:greenyellow;
+    color:springgreen;
+}
+
+/*Accessibility*/
+
+@media(max-width:800px){
+    .projectGallery{
+        flex-wrap:wrap;
+        flex-direction:row;
+        justify-content:center;
+    
+    }
+
+    .projectGallery img{
+        width:8rem;
+        height:20vh;
+        padding:1rem;
+    }
+    
+    .galleryDesc{
+        font-size:1.2rem;
+        order:5;
+        text-align:center;
+        padding:.7rem;
+    }
+
+    footer nav a{
+        box-sizing:border-box;
+        padding:1.5rem;
+        margin:2rem;
+        max-width:100%;
+        border:.1rem;
+        border-width:.5rem 3rem;
+        background-color:springgreen;
+        font:black
+    }
+    
+}
+
+@media(max-width:500px){
+    footer{
+        display:flex;
+        justify-content:space-between;
+        text-align:center;
+        box-sizing:border-box;
+        padding:.1rem;
+        margin:0;
+        max-width:100%;
+        border-color:lightseagreen;
+        border-width:.5rem 3rem;
+        background-color:lightseagreen;
+        font:black
+    }
+
+    header nav a{
+        box-sizing:border-box;
+        padding:.1rem;
+        margin:.8rem;
+        max-width:100%;
+        border:.1rem;
+        border-width:.5rem 3rem;
+        background-color:springgreen;
+        font:black;
+    }
+
+    footer nav a{
+        box-sizing:border-box;
+        padding:.8rem;
+        margin:.2rem;
+        max-width:100%;
+        border:.1rem;
+        border-width:.5rem 3rem;
+        background-color:springgreen;
+        font:black
+    }
 }
